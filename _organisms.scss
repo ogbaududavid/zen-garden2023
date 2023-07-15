@@ -1,0 +1,11 @@
+@use 'variables';
+.intro {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	height: 500px;
+	z-index: 1;
+	color: white;
+	padding: 20px;
+  }
+  
