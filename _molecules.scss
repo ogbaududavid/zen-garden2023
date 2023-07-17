@@ -1,0 +1,39 @@
+@use 'variables' as *;
+.intro{
+	background-color: $dark-background-color;
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	height: 500px;
+	z-index: 1;
+	color: white;
+	padding: 20px;
+
+	.summary{
+		border-bottom: 10px solid $text-light2;
+		margin-right: 10px;
+		align-self: center;
+	}
+
+	.preamble{
+		background-color: $accent1;
+		padding: 10px;
+		color: $text-dark;
+		height: 700px;
+		position: relative;
+		font-weight: bolder;
+		border-radius: 0 0 50% 50%;
+		animation: slideIn 2s;
+		&::before{
+			content: "";
+			background-image: url('images/background-image-small.jpg');
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 25%;
+			border-radius: 0 0 50% 50%;
+		}
+	}
+}
